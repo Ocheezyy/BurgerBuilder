@@ -22,3 +22,9 @@
         display: none;
     }
 }
+
+@media(min-width: 500px){
+    .HideToggle {
+        display: none;
+    }
+}
