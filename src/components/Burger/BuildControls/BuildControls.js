@@ -4,7 +4,7 @@ import BuildControl from "./BuildControl/BuildControl";
 import "./BuildControls.css";
 
 const controls = [
-    {label: "Salad", type: "salad"},
+    {label: "Lettuce", type: "lettuce"},
     {label: "Bacon", type: "bacon"},
     {label: "Cheese", type: "cheese"},
     {label: "Meat", type: "meat"},
