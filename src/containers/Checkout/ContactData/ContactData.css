@@ -6,12 +6,10 @@
     margin: 20px auto;
     width: 80%;
     text-align: center;
+    border: 1px solid #ccc;
+    background-color: floralwhite;
 }
 
-.ContactData input {
-    height: 1.7em;
-    display: block;
-}
 
 .ContactData button:hover {
     background-color: lightgray;
