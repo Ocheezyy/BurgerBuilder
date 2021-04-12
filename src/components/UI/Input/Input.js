@@ -3,18 +3,23 @@ import "./Input.css";
 
 const input = (props) => {
     let inputElement = null;
+    let inputClasses = ["InputElement"];
+
+    if (props.touched && props.valid && props.shouldvalidate){
+        inputClasses.push("Invalid")
+    }
 
     switch (props.inputtype) {
         case ('input'):
             inputElement = (<input
-                className="InputElement"
+                className={inputClasses.join(' ')}
                 placeholder={props.elementconfig.placeholder}
                 onChange={props.changed}
                 {...props} />)
             break;
         case ('textarea'):
             inputElement =(<textarea
-                className="InputElement"
+                className={inputClasses.join(' ')}
                 placeholder={props.elementconfig.placeholder}
                 onChange={props.changed}
                 {...props} />)
@@ -33,7 +38,7 @@ const input = (props) => {
             break;
         default:
             inputElement = (<input
-                className="InputElement"
+                className={inputClasses.join(' ')}
                 placeholder={props.elementconfig.placeholder}
                 onChange={props.changed}
                 {...props} />)
